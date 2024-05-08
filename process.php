@@ -1,6 +1,6 @@
 <?php
 
-$db_host = "localhost";
+$db_host = "elindor49.github.io";
 $db_user = "root";
 $db_password = '';
 $db_name = "users";
