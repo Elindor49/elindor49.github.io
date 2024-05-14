@@ -1,5 +1,5 @@
 <?php
-$servername = "elindor49.github.io";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "count";

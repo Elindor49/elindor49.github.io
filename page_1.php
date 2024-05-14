@@ -3,7 +3,7 @@ session_start();
 include 'includes/functions.php';
 include 'includes/functions_2.php';
 include 'includes/functions_3.php';
-include 'includes/sum.php';
+
 
 $finalResult = "";
 $finalResult_2 = "";
@@ -98,7 +98,6 @@ if (isset($_SESSION['value7'])) {
             <option value="Декабрь">Декабрь</option>
         </select>
         <button type="submit">Рассчитать</button>
-        <!-- <button type="submit" name="btn1">На главную</button> -->
     </form>
     <?php if(isset($_POST['btn1'])) {
         header("Location: main_page.php");
@@ -129,7 +128,6 @@ if (isset($_SESSION['value7'])) {
             <option value="Декабрь">Декабрь</option>
         </select>
         <button type="submit">Рассчитать</button>
-        <!-- <button type="submit" name="btn1">На главную</button> -->
     </form>
     <?php if(isset($_POST['btn1'])) {
         header("Location: main_page.php");
@@ -173,7 +171,6 @@ if (isset($_SESSION['value7'])) {
 
     <?php
 
-
     function getLastThreeSums() {
         include 'includes/db.php';
 
@@ -207,7 +204,6 @@ if (isset($_SESSION['value7'])) {
     }
 ?>
 
-
     <h4>Сумма</h4>
 
 
@@ -215,7 +211,6 @@ if (isset($_SESSION['value7'])) {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = getLastThreeSums();
         if (is_numeric($result)) {
-            // echo "Всего: " . $result . " рублей";
         } else {
             echo $result;
         }
